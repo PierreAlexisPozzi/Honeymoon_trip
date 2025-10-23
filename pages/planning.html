@@ -1,0 +1,22 @@
+<div class="page active" id="planning-page">
+    <h2 class="page-title">Planning Journalier</h2>
+    <p class="page-subtitle">Découvrez le détail de chaque journée de votre voyage</p>
+    
+    <!-- Navigation par flèches avec nouveau design -->
+    <div class="day-navigation">
+        <button class="nav-arrow" id="prev-day" disabled>←</button>
+        <div class="dropdown-container" style="flex: 1; max-width: 400px;">
+            <select class="day-dropdown" id="day-dropdown">
+                <option value="">Sélectionnez un jour...</option>
+                <!-- Les options seront générées par JavaScript -->
+            </select>
+        </div>
+        <button class="nav-arrow" id="next-day">→</button>
+    </div>
+    
+    <div class="day-details" id="day-details">
+        <div style="text-align: center; padding: 2rem; color: #666;">
+            <p>Sélectionnez un jour dans le menu déroulant pour voir les détails</p>
+        </div>
+    </div>
+</div>

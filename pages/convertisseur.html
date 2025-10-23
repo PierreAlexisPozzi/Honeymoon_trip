@@ -1,0 +1,59 @@
+<div class="page" id="convertisseur-page">
+    <h2 class="page-title">Convertisseur de Devises</h2>
+    <p class="page-subtitle">Convertissez facilement entre les devises</p>
+    
+    <div class="converter-container">
+        <div class="converter-form">
+            <div class="converter-group">
+                <label class="converter-label">De</label>
+                <input type="number" class="converter-input" id="converter-amount" placeholder="Montant" value="1" min="0" step="0.01">
+                <select class="converter-select" id="converter-from">
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="JPY">JPY - Yen Japonais</option>
+                    <option value="PHP">PHP - Peso Philippin</option>
+                </select>
+            </div>
+            
+            <button class="converter-swap" id="converter-swap" title="Inverser les devises">⇄</button>
+            
+            <div class="converter-group">
+                <label class="converter-label">Vers</label>
+                <div class="converter-input" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                    <span id="converter-result-amount">1.00</span>
+                </div>
+                <select class="converter-select" id="converter-to">
+                    <option value="JPY">JPY - Yen Japonais</option>
+                    <option value="PHP">PHP - Peso Philippin</option>
+                    <option value="EUR">EUR - Euro</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="converter-rates">
+            <div class="rate-item">
+                <strong>1 EUR = <span id="rate-eur-jpy">160.50</span> JPY</strong>
+            </div>
+            <div class="rate-item">
+                <strong>1 EUR = <span id="rate-eur-php">60.25</span> PHP</strong>
+            </div>
+        </div>
+        
+        <button class="converter-update" id="update-rates" style="display: block; margin: 1rem auto 0; padding: 0.5rem 1rem; background: var(--secondary); color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Actualiser les taux
+        </button>
+        
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; text-align: center;">
+            Dernière mise à jour : <span id="last-update">...</span>
+        </p>
+    </div>
+    
+    <div class="budget-tips">
+        <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">💡 Conseils Budget</h3>
+        <ul style="color: #666;">
+            <li><strong>Japon</strong> : 100-150€ par personne/jour (hôtel, repas, transports)</li>
+            <li><strong>Philippines</strong> : 50-80€ par personne/jour</li>
+            <li><strong>Activités</strong> : Ski (50-80€/jour), Plongée PADI (200-300€)</li>
+            <li>Prévoir environ 20% de budget supplémentaire pour les imprévus</li>
+        </ul>
+    </div>
+</div>

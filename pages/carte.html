@@ -1,0 +1,27 @@
+<div class="page" id="carte-page">
+    <h2 class="page-title">Carte Interactive</h2>
+    <p class="page-subtitle">Visualisez les points d'intérêt et hôtels sur la carte</p>
+    
+    <div class="map-controls">
+        <button class="map-btn active" data-layer="planned">Points d'intérêt certains</button>
+        <button class="map-btn" data-layer="optional">Options temps libre</button>
+        <button class="map-btn" data-layer="hotels">Hôtels</button>
+        <button class="map-btn" data-layer="all">Tout afficher</button>
+    </div>
+    
+    <div id="map"></div>
+    <div id="map-legend">
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #4caf50;"></span>
+            <span>Points d'intérêt certains</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #ff9800;"></span>
+            <span>Options temps libre</span>
+        </div>
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #2196f3;"></span>
+            <span>Hébergements</span>
+        </div>
+    </div>
+</div>
